@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
   <html lang="en">
   <head>
       <meta charset="UTF-8">
@@ -189,10 +189,10 @@
       <div class="summary">
           <p>
               Anime Figure Tracker (“AFT,” “we,” “our,” or “the app”) helps users
-              identify anime figures, manage a collection, submit community
-              ratings and photos, and optionally publish a public collection
-              gallery. This policy explains what information is processed, how it
-              is used, and the choices available to you.
+              identify anime figures, manage and privately back up a collection,
+              submit community ratings and photos, and optionally publish a public
+              collection gallery. This policy explains what information is
+              processed, how it is used, and the choices available to you.
           </p>
       </div>
 
@@ -200,48 +200,114 @@
 
       <p>
           This Privacy Policy applies to the Anime Figure Tracker iOS app, its
-          catalog and identification services, public collection galleries,
-          community features, optional collection analytics, support services,
-          and related websites.
+          catalog and identification services, private iCloud collection backup
+          and synchronization, public collection galleries, community features,
+          optional anonymous collection analytics, support services, and related
+          websites.
       </p>
 
       <p>
           In this policy, information is considered collected when it is sent
           off your device and retained by AFT or one of its service providers.
           Information that remains only on your device is described separately.
+          Information synchronized through your personal iCloud account is also
+          described separately from information stored on AFT’s backend.
       </p>
 
-      <h2>2. Information stored on your device</h2>
+      <h2>2. On-device collection storage</h2>
 
       <p>
-          Most personal collection information is stored locally on your device.
-          This may include:
+          AFT stores your personal collection on your device. This may include:
       </p>
 
       <ul>
           <li>Figure names, characters, series, manufacturers, lines and scales;</li>
-          <li>Purchase prices, retail prices and currency preferences;</li>
+          <li>Purchase prices, currencies and other collection-value information;</li>
           <li>Personal notes, condition, ownership status and shelf groups;</li>
           <li>Photos of your figures and figure boxes;</li>
           <li>Featured-figure selections and rankings;</li>
           <li>Hidden-photo preferences;</li>
-          <li>App theme, layout, filter and effect preferences; and</li>
+          <li>Showcase effects and display preferences;</li>
+          <li>App theme, layout and filter preferences; and</li>
           <li>Subscription-entitlement status.</li>
       </ul>
 
       <p>
           Your complete personal collection is not automatically published or
-          connected to your gallery account. Limited information is sent
+          transferred to AFT’s Cloudflare backend. Limited information is sent
           off-device when required for a feature you use, as described below.
       </p>
 
+      <h2>3. Private iCloud backup and synchronization</h2>
+
       <p>
-          Device backups or synchronization provided by Apple may include app
-          information according to your iCloud and device-backup settings. Apple
-          controls those services under its own privacy policy.
+          When you are signed in to iCloud and iCloud Drive is available, AFT uses
+          Apple CloudKit to synchronize your collection through a private database
+          associated with your iCloud account. This allows your collection to
+          return after reinstalling AFT and to remain synchronized across supported
+          devices using the same iCloud account.
       </p>
 
-      <h2>3. Figure scanning, search and identification</h2>
+      <p>Private iCloud synchronization may include:</p>
+
+      <ul>
+          <li>Figure names and collection metadata;</li>
+          <li>Character, series, manufacturer, line and scale information;</li>
+          <li>Ownership status, condition and shelf-group assignments;</li>
+          <li>Purchase prices and currency information;</li>
+          <li>Personal notes;</li>
+          <li>Featured rankings, gallery-photo visibility and display effects;</li>
+          <li>Community-rating and submission status associated with a figure;</li>
+          <li>Compressed private copies of figure photos;</li>
+          <li>Compressed private copies of original photos used for editing; and</li>
+          <li>Technical identifiers and fingerprints used to verify backup completion.</li>
+      </ul>
+
+      <p>
+          These records and photos are stored in the private CloudKit database for
+          your iCloud account. Apple states that only the user can access a private
+          CloudKit database by default, that the user owns its contents, and that
+          private database contents are not visible through the developer portal.
+          Private CloudKit data may count toward your available iCloud storage.
+      </p>
+
+      <p>
+          AFT does not copy your private iCloud collection or private backup photos
+          into its Cloudflare database, public gallery storage, analytics dashboard
+          or advertising systems unless you separately choose to use a feature that
+          requires a particular item to be submitted or published.
+      </p>
+
+      <p>
+          If iCloud is unavailable, you are signed out of iCloud, or iCloud Drive
+          is disabled, AFT may fall back to local on-device storage. In that case,
+          your collection may not be recoverable after deleting the app or losing
+          the device.
+      </p>
+
+      <h3>30-day deleted-figure recovery</h3>
+
+      <p>
+          AFT Pro may preserve a deleted figure and its private photo copies in
+          your private iCloud database for up to 30 days. This allows the figure
+          to be restored through the Recently Deleted feature.
+      </p>
+
+      <p>
+          Expired recovery records are removed during a subsequent cleanup and
+          synchronization after the retention period ends. Restoring a figure
+          returns it to your collection and removes the corresponding recovery
+          record.
+      </p>
+
+      <p>
+          Deleting AFT from a device does not necessarily delete collection data
+          already stored in your private iCloud database. You can manage AFT’s
+          access to iCloud and its stored iCloud data through Apple’s iCloud
+          settings where those controls are available.
+      </p>
+
+      <h2>4. Figure scanning, search and identification</h2>
 
       <p>
           When you scan a figure box, photograph a figure, scan a barcode, or
@@ -276,8 +342,8 @@
           counts, learned catalog aliases, and identification success or failure
           statistics. This helps improve future identification results and allows
           a barcode identified by one scan to be recognized more quickly later.
-          AFT does not intentionally store raw OCR text from ordinary scans as
-          part of your collection profile.
+          AFT does not intentionally store raw OCR text from ordinary scans as part
+          of your collection profile.
       </p>
 
       <p>
@@ -286,7 +352,7 @@
           and privacy policies.
       </p>
 
-      <h2>4. Sign in with Apple and gallery accounts</h2>
+      <h2>5. Sign in with Apple and gallery accounts</h2>
 
       <p>
           Signing in is optional and is required only for hosted public-gallery
@@ -321,7 +387,12 @@
           websites.
       </p>
 
-      <h2>5. Public collection galleries</h2>
+      <p>
+          Your Sign in with Apple gallery account is separate from the private
+          iCloud database used for collection backup and synchronization.
+      </p>
+
+      <h2>6. Public collection galleries</h2>
 
       <p>
           Publishing a gallery is optional. You choose whether to publish a
@@ -387,28 +458,22 @@
           photos.
       </p>
 
-      <h2>6. Anonymous collection analytics</h2>
+      <h2>7. Optional anonymous collection analytics</h2>
 
       <p>
           AFT includes an optional “Anonymous Collection Analytics” feature.
-          This feature is disabled until you affirmatively choose to participate.
+          Collection analytics is <strong>off by default</strong>. AFT asks whether
+          you want to participate before sending a collection snapshot.
       </p>
 
       <p>
-          After the app’s introduction, AFT may present a privacy choice
-          explaining the analytics feature. You may select “Share Anonymous
-          Analytics” or “Not Now.” Declining does not restrict access to any app
-          feature.
+          Declining collection analytics does not restrict app functionality. You
+          can change your choice at any time under
+          <strong>Settings → Privacy</strong>.
       </p>
 
       <p>
-          You can review or change your choice at any time under
-          <strong>Settings → Privacy → Anonymous Collection Analytics</strong>.
-      </p>
-
-      <p>
-          When you choose to participate, AFT sends a privacy-minimized collection
-          snapshot containing:
+          When enabled, AFT sends a privacy-minimized snapshot containing:
       </p>
 
       <ul>
@@ -428,11 +493,11 @@
           and each figure-copy identifier before storing the analytics snapshot.
           The random installation identifier is not Apple’s advertising
           identifier and is not connected to your Sign in with Apple gallery
-          account.
+          account or private iCloud database.
       </p>
 
       <p>
-          Anonymous Collection Analytics does <strong>not</strong> send or store:
+          Collection analytics does <strong>not</strong> send or store:
       </p>
 
       <ul>
@@ -452,7 +517,7 @@
 
       <ul>
           <li>Total registered figure copies;</li>
-          <li>Approximate numbers of participating collector installations;</li>
+          <li>Approximate numbers of participating app installations;</li>
           <li>Most collected figures;</li>
           <li>Most collected characters and series;</li>
           <li>Most collected manufacturers and product lines;</li>
@@ -467,14 +532,14 @@
       </p>
 
       <p>
-          If you turn Anonymous Collection Analytics off, AFT sends an empty
-          snapshot during the next successful synchronization. This removes the
+          When you turn Anonymous Collection Analytics off, AFT sends an empty
+          snapshot during the next successful synchronization. This deletes the
           stored collection-registration rows associated with that installation.
           If the device is offline, removal occurs the next time the app can
           successfully contact the service.
       </p>
 
-      <h2>7. Community ratings</h2>
+      <h2>8. Community ratings</h2>
 
       <p>
           If you submit a Community Aura rating, AFT processes:
@@ -500,7 +565,7 @@
           installation replaces the previous rating from that installation.
       </p>
 
-      <h2>8. Community photo submissions</h2>
+      <h2>9. Community photo submissions</h2>
 
       <p>
           Community photo submission is optional and requires a separate,
@@ -526,7 +591,8 @@
       <p>
           You may revoke a community photo submission through the available
           in-app control. Revocation removes the submitted community copy but
-          does not delete the separate photo stored in your personal collection.
+          does not delete the separate photo stored in your personal collection
+          or private iCloud backup.
       </p>
 
       <p>
@@ -535,12 +601,12 @@
           contact information, account information or other sensitive content.
       </p>
 
-      <h2>9. Purchases and subscriptions</h2>
+      <h2>10. Purchases and subscriptions</h2>
 
       <p>
           AFT Pro subscriptions are processed by Apple through the App Store and
-          StoreKit. AFT does not receive or store your payment-card or
-          bank-account information.
+          StoreKit. AFT does not receive or store your payment-card or bank-account
+          information.
       </p>
 
       <p>
@@ -550,7 +616,7 @@
           Apple’s privacy policy and terms.
       </p>
 
-      <h2>10. Advertising</h2>
+      <h2>11. Advertising</h2>
 
       <p>
           The free version of AFT may display advertising supplied by Google
@@ -560,10 +626,7 @@
 
       <ul>
           <li>Device and advertising identifiers;</li>
-          <li>
-              Approximate or coarse location derived from device or network
-              information;
-          </li>
+          <li>Approximate or coarse location derived from device or network information;</li>
           <li>Advertising interactions and product interactions;</li>
           <li>Advertising data;</li>
           <li>IP address and device information;</li>
@@ -580,9 +643,9 @@
       </p>
 
       <p>
-          AFT does not provide your Sign in with Apple identifier, gallery photos,
-          gallery metadata or optional collection-analytics snapshot to Google
-          for advertising.
+          AFT does not provide your Sign in with Apple identifier, private iCloud
+          collection, gallery photos, gallery metadata or optional collection
+          analytics snapshot to Google for advertising.
       </p>
 
       <p>
@@ -590,7 +653,7 @@
           their Pro entitlement is active.
       </p>
 
-      <h2>11. Technical, diagnostic and provider-usage information</h2>
+      <h2>12. Technical, diagnostic and provider-usage information</h2>
 
       <p>
           AFT and its service providers may process limited technical information
@@ -623,23 +686,24 @@
           intentionally attach an IP address to your public gallery profile.
       </p>
 
-      <h2>12. How information is used</h2>
+      <h2>13. How information is used</h2>
 
       <p>Information may be processed to:</p>
 
       <ul>
+          <li>Store and synchronize your private collection through iCloud;</li>
+          <li>Restore collection records and private photos after reinstalling;</li>
+          <li>Provide 30-day deleted-figure recovery to eligible Pro users;</li>
+          <li>Verify private iCloud backup completion;</li>
           <li>Identify figures and return catalog results;</li>
           <li>Provide barcode, text and catalog searches;</li>
-          <li>Retrieve and improve figure and pricing information;</li>
+          <li>Retrieve and improve figure information;</li>
           <li>Maintain and improve the figure catalog;</li>
           <li>Authenticate gallery accounts;</li>
           <li>Publish, update and unpublish public collection galleries;</li>
           <li>Store optional gallery photos;</li>
           <li>Provide community ratings and reviewed community images;</li>
-          <li>
-              Calculate aggregate collection statistics and trends when users
-              choose to participate;
-          </li>
+          <li>Calculate aggregate collection statistics when users opt in;</li>
           <li>Verify subscription entitlements;</li>
           <li>Display and measure advertising;</li>
           <li>Monitor service capacity, reliability and provider usage;</li>
@@ -648,7 +712,7 @@
           <li>Respond to support, privacy and deletion requests.</li>
       </ul>
 
-      <h2>13. Service providers</h2>
+      <h2>14. Service providers</h2>
 
       <p>
           AFT relies on service providers that process information as needed to
@@ -667,6 +731,7 @@
           <tr>
               <td>Apple</td>
               <td>
+                  Private CloudKit collection storage and synchronization,
                   Sign in with Apple, StoreKit subscriptions, App Store
                   distribution, device backups and operating-system services.
               </td>
@@ -675,9 +740,9 @@
           <tr>
               <td>Cloudflare</td>
               <td>
-                  Backend hosting, database storage, gallery-photo storage,
-                  request delivery, optional analytics storage, security and
-                  rate limiting.
+                  Backend hosting, catalog and analytics database storage,
+                  public gallery storage, gallery-photo storage, request delivery,
+                  administrative tools, security and rate limiting.
               </td>
           </tr>
 
@@ -693,8 +758,8 @@
           <tr>
               <td>Brave Search and configured catalog providers</td>
               <td>
-                  Product, barcode, pricing and figure-information searches when
-                  the AFT catalog does not contain a sufficient result.
+                  Product, barcode and figure-information searches when the AFT
+                  catalog does not contain a sufficient result.
               </td>
           </tr>
 
@@ -768,29 +833,27 @@
           </li>
       </ul>
 
-      <h2>14. Sale, sharing and tracking</h2>
+      <h2>15. Sale, sharing and tracking</h2>
 
       <p>
-          AFT does not sell your gallery account, collection information or
-          gallery photos for money.
+          AFT does not sell your gallery account, personal collection information
+          or gallery photos for money.
       </p>
 
       <p>
           AFT does not use its random collection-analytics identifier to track you
           across other companies’ apps or websites. It is not connected to your
-          Apple advertising identifier or Sign in with Apple gallery account.
+          Apple advertising identifier, private iCloud database or Sign in with
+          Apple gallery account.
       </p>
 
       <p>Information may be disclosed:</p>
 
       <ul>
           <li>At your direction, such as when you publish or share a gallery;</li>
-          <li>When you voluntarily submit a community photo;</li>
+          <li>When you voluntarily submit a community photo or rating;</li>
           <li>To the service providers described in this policy;</li>
-          <li>
-              To comply with law, legal process or enforceable government
-              requests;
-          </li>
+          <li>To comply with law, legal process or enforceable government requests;</li>
           <li>To investigate fraud, abuse or security incidents; or</li>
           <li>To protect the rights, safety and integrity of AFT and its users.</li>
       </ul>
@@ -801,21 +864,35 @@
           device settings.
       </p>
 
-      <h2>15. Data retention</h2>
+      <h2>16. Data retention</h2>
 
       <p>Retention depends on the feature:</p>
 
       <ul>
           <li>
               <strong>On-device collection:</strong> retained until you edit or
-              delete it, delete the app, or erase the associated device data.
+              delete it, delete the app, erase the associated device data, or
+              synchronize a deletion through iCloud.
+          </li>
+
+          <li>
+              <strong>Private iCloud collection backup:</strong> retained in your
+              private CloudKit database according to your collection changes and
+              iCloud settings. Deleting the app from one device does not
+              necessarily delete the private iCloud copy.
+          </li>
+
+          <li>
+              <strong>Recently Deleted recovery records:</strong> retained for up
+              to 30 days and removed during a subsequent app cleanup and
+              synchronization after expiration.
           </li>
 
           <li>
               <strong>Identification requests:</strong> ordinary scan images are
               not intentionally retained by AFT after processing. Catalog matches,
-              confirmed barcodes and unresolved barcode statistics may be
-              retained to improve identification.
+              confirmed barcodes and unresolved barcode statistics may be retained
+              to improve identification.
           </li>
 
           <li>
@@ -841,11 +918,9 @@
           </li>
 
           <li>
-              <strong>Optional collection analytics:</strong> not collected until
-              you choose to participate. A current collection snapshot is retained
-              while participation remains enabled. Turning the feature off removes
-              that installation’s snapshot during the next successful
-              synchronization.
+              <strong>Collection analytics:</strong> retained only after you opt
+              in. Turning it off removes that installation’s current collection
+              snapshot during the next successful synchronization.
           </li>
 
           <li>
@@ -871,7 +946,7 @@
           records for limited periods under their own retention requirements.
       </p>
 
-      <h2>16. Your choices and controls</h2>
+      <h2>17. Your choices and controls</h2>
 
       <p>You can:</p>
 
@@ -885,20 +960,16 @@
           <li>Sign out of your gallery account;</li>
           <li>Delete your hosted gallery account using “Delete Account”;</li>
           <li>Delete locally stored figures and photos within the app;</li>
+          <li>Restore eligible Pro figures through Recently Deleted;</li>
+          <li>Review private iCloud backup status in AFT Settings;</li>
+          <li>Manage AFT’s iCloud access and data through Apple’s iCloud settings;</li>
           <li>Revoke a community photo submission using the available app control;</li>
           <li>
-              Decline or enable Anonymous Collection Analytics without losing
-              access to any app feature;
-          </li>
-          <li>
-              Change your analytics choice under
+              Decline or turn off Anonymous Collection Analytics under
               <strong>Settings → Privacy</strong>;
           </li>
           <li>Manage or cancel AFT Pro through Apple’s subscription settings;</li>
-          <li>
-              Change advertising consent choices where the consent form is
-              available;
-          </li>
+          <li>Change advertising consent choices where the consent form is available;</li>
           <li>Limit advertising tracking through Apple’s privacy settings; and</li>
           <li>Contact us with a privacy, access or deletion request.</li>
       </ul>
@@ -910,13 +981,20 @@
       </p>
 
       <p>
-          Gallery-account deletion and optional collection analytics are separate
-          because the analytics snapshot is not connected to your gallery
-          account. To remove both, delete the gallery account and turn off
-          Anonymous Collection Analytics.
+          Gallery-account deletion, private iCloud collection storage and optional
+          anonymous collection analytics are separate systems. Deleting a hosted
+          gallery account does not automatically delete private iCloud collection
+          data or an opted-in analytics snapshot.
       </p>
 
-      <h2>17. Device permissions</h2>
+      <p>
+          To remove all applicable information, delete the hosted gallery account,
+          turn off Anonymous Collection Analytics, delete collection entries you no
+          longer want, and manage AFT’s stored iCloud data through Apple’s iCloud
+          settings where necessary.
+      </p>
+
+      <h2>18. Device permissions</h2>
 
       <p>
           AFT may request camera access to scan boxes, figures and barcodes. It
@@ -934,7 +1012,7 @@
           Settings app.
       </p>
 
-      <h2>18. Security</h2>
+      <h2>19. Security</h2>
 
       <p>
           AFT uses reasonable technical measures intended to protect information,
@@ -943,10 +1021,12 @@
 
       <ul>
           <li>HTTPS encryption in transit;</li>
-          <li>One-way hashing of account and analytics identifiers;</li>
-          <li>Hashed server-side session tokens;</li>
+          <li>Private CloudKit storage protected through the user’s iCloud account;</li>
+          <li>One-way hashing of gallery-account and analytics identifiers;</li>
+          <li>Hashed server-side gallery session tokens;</li>
           <li>iOS Keychain storage for gallery sessions;</li>
           <li>Access controls for administrative tools;</li>
+          <li>Resizing and compression of uploaded gallery and community photos;</li>
           <li>Upload and request-size limits;</li>
           <li>Rate limiting and abuse prevention; and</li>
           <li>Non-indexed public-gallery links.</li>
@@ -958,7 +1038,7 @@
           you share its link.
       </p>
 
-      <h2>19. International processing</h2>
+      <h2>20. International processing</h2>
 
       <p>
           AFT and its service providers may process information in countries
@@ -968,7 +1048,7 @@
           processing.
       </p>
 
-      <h2>20. Children’s privacy</h2>
+      <h2>21. Children’s privacy</h2>
 
       <p>
           AFT is not directed to children under 13, or the equivalent minimum age
@@ -982,7 +1062,7 @@
           taken.
       </p>
 
-      <h2>21. Your privacy rights</h2>
+      <h2>22. Your privacy rights</h2>
 
       <p>
           Depending on where you live, you may have rights to request access,
@@ -991,10 +1071,16 @@
       </p>
 
       <p>
-          Many privacy actions can be completed directly in the app. You may also
-          contact us using the information below. We may need to verify that a
-          request relates to your account or app installation before completing
-          it.
+          Many privacy actions can be completed directly in the app or through
+          Apple’s iCloud settings. You may also contact us using the information
+          below. We may need to verify that a request relates to your account or
+          app installation before completing it.
+      </p>
+
+      <p>
+          AFT cannot directly provide a copy of records that are accessible only
+          through your private CloudKit database. Access to those records is
+          controlled through your iCloud account and the app.
       </p>
 
       <p>
@@ -1002,7 +1088,7 @@
           or other sensitive information in a public GitHub support issue.
       </p>
 
-      <h2>22. Changes to this policy</h2>
+      <h2>23. Changes to this policy</h2>
 
       <p>
           This policy may be updated when AFT adds features, changes service
@@ -1015,7 +1101,7 @@
           listing or another appropriate notice.
       </p>
 
-      <h2>23. Contact</h2>
+      <h2>24. Contact</h2>
 
       <p>
           For privacy questions, account-deletion assistance or other support,
